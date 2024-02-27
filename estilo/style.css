@@ -1,0 +1,167 @@
+@charset 'UTF-8';
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+       --fonte1: Verdana,Geneva,Tahoma, sans-serif;
+       --fonte2: "Passion One", sans-serif;
+       --fonte3: "Sriracha", cursive;
+
+
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body{
+
+    min-height: 100vh;
+    background-color: white;
+    font-family: var(--fonte1);
+
+}
+.menu{
+    background-color: gray;
+    height: 50px;
+
+ 
+}
+.menu-lista {
+  
+    text-align: left;
+    padding-top: 20px;
+   
+}
+
+#logo{
+
+    color:rgba(255, 255, 255);
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-right: 20px;
+    font-variant: small-caps;
+  
+
+    font-family: var(--fonte2);
+}
+ 
+ 
+       
+.menu-lista ul{
+    display:inline-flex;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: lighter;
+
+
+   
+    
+}
+
+
+.menu-lista li a{
+    color:rgba(255, 255, 255, 0.747);
+    padding-right: 10px;
+    padding-bottom: 30px;
+    text-decoration: none;
+ 
+}
+
+.menu-lista li a:hover{
+    color: rgba(0, 0, 0, 0.74);
+    text-decoration: underline;
+}
+
+header{
+    background-color:darkslategrey;
+    color:rgba(0, 0, 0, 0.87);
+    text-align:center;
+}
+
+header > h1{
+    padding-top:50px;
+
+    font-variant: small-caps;
+    font-size: 5vw;
+    font-family: var(--fonte2);
+}
+
+header > p{
+
+    padding-bottom: 50px;
+}
+
+
+
+header a, footer a{
+
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+section{
+
+    font-family: var(--fonte3);
+    line-height:2em;
+    padding-left:30px;
+    padding-top:10vh;
+    padding-bottom:10vh;
+    font-size:3.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+    width: 50%;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+   background-color:rgba(51, 51, 51, 0.568);
+   color:white;
+   box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+   background-size:cover;
+   background-attachment:fixed;
+
+}
+
+section.imagem > p{
+
+    display: inline-block;
+    padding: 10px;
+
+    background-color: rgba(0, 0, 0, 0.308);
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.573);
+
+}
+
+section#img001{
+    background-image: url(../imagens/pexels-summer-stock-322032-med.jpg);
+    background-position: center center;
+}
+
+
+section#img002{
+    background-image: url(../imagens/pexels-min-an-1004014-med.jpg);
+    background-position: center center;
+}
+footer{
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+    text-align: center;
+    padding:10px ;
+}
